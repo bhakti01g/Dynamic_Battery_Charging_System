@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".TerminalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6">
+
+            <Spinner
+                android:id="@+id/spinnerBTPairedDevices"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/white_box"
+                android:layout_height="match_parent">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".4">
+
+            <Button
+                android:id="@+id/button_connect"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="CONNECT"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="72">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/battery1"
+            android:src="@drawable/battery_75"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvbat1"
+            android:layout_gravity="center"
+            android:text="Battery 1=82%"
+            android:paddingBottom="20dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/battery2"
+            android:src="@drawable/battery_25"
+            android:layout_gravity="center">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvbat2"
+            android:layout_gravity="center"
+            android:text="Battery 2=20%"
+            android:paddingBottom="20dp"
+            android:textSize="20dp">
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/temp"
+            android:src="@drawable/temp_filled"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvtemp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Temperature=37°c"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:id="@+id/idMATextViewReceivedMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:gravity="bottom"
+            android:textColor="@color/black">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+        <Button
+            android:id="@+id/button_share"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Share"
+            android:backgroundTint="@color/blue">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/round_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="back"
+            android:text="Back" >
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

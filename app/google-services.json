@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961718465075",
+    "project_id": "dmbcs-fa790",
+    "storage_bucket": "dmbcs-fa790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961718465075:android:c306b8a37e9607532ce946",
+        "android_client_info": {
+          "package_name": "com.example.dmbcs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnldtdbGfVA3sY_U5jxqemA5BCWEvuc9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
